@@ -28,8 +28,8 @@ Then open industrify.py, and edit the script as follows:
   for more than just testing)
 - edit the mapping from symbols to tags, for whatever symbols/tags you need (or provide a different
   lookup mechanism for these)
-- by default, the script will only modify 100 trades maximum, and only trades opened on 
-  or after 1/1/2016. You can change either of these parameters in the get_trades call to meet your needs.
+- by default, the script will only modify trades opened on 
+  or after 1/1/2016. You can change this parameter in the get_trades call to meet your needs.
 
 Then run the script with python:
 
