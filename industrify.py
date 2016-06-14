@@ -44,12 +44,12 @@ while True:
         if not tag in t["tags"]:
           t["tags"].append(tag)
           tv.update_trade(t["id"], tags = t["tags"])
-          print "added {} tag to {} trade (id: {})".format(tag, t["symbol"], t["id"])
+          print("added {} tag to {} trade (id: {})".format(tag, t["symbol"], t["id"]))
       else:
         tv.update_trade(t["id"], tags = [tag])
-        print "added {} tag to {} trade (id: {})".format(tag, t["symbol"], t["id"])
+        print("added {} tag to {} trade (id: {})".format(tag, t["symbol"], t["id"]))
   if len(trades) < page_size:
     break
   offset += page_size
   
-print "done"
+print("done")
